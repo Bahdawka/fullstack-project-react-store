@@ -1,0 +1,386 @@
+[
+  {
+    "id": "1",
+    "name": "Dell XPS 13 Laptop",
+    "description": "Compact and powerful laptop with InfinityEdge display",
+    "price": "1205",
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "4",
+    "name": "Asus ROG Strix G15 Gaming Laptop",
+    "description": "Gaming laptop with high refresh rate display",
+    "price": 1500,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "7",
+    "name": "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with per-key RGB backlighting",
+    "price": 200,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "8",
+    "name": "Acer Predator X27 Gaming Monitor",
+    "description": "4K UHD gaming monitor with NVIDIA G-SYNC technology",
+    "price": 800,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "9",
+    "name": "AMD Radeon RX 6800 XT Graphics Card",
+    "description": "High performance graphics card with ray tracing support",
+    "price": 1100,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "10",
+    "name": "NVIDIA GeForce RTX 3080 Graphics Card",
+    "description": "Flagship graphics card with advanced ray tracing support",
+    "price": 1200,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "11",
+    "name": "Lenovo ThinkPad X1 Carbon Laptop",
+    "description": "Lightweight and durable business laptop with long battery life",
+    "price": 1400,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "12",
+    "name": "Dell Alienware Aurora R10 Gaming Desktop",
+    "description": "High performance gaming desktop with advanced cooling",
+    "price": 2000,
+    "image": "https://picsum.photos/640/480?random=desktop",
+    "category": "Desktops and All-in-Ones"
+  },
+  {
+    "id": "13",
+    "name": "HP Omen 15 Gaming Laptop",
+    "description": "Gaming laptop with high refresh rate display",
+    "price": 1600,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "14",
+    "name": "Asus TUF Gaming VG27AQ Monitor",
+    "description": "Gaming monitor with high refresh rate and low response time",
+    "price": 350,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "15",
+    "name": "Razer DeathAdder V2 Gaming Mouse",
+    "description": "Ergonomic gaming mouse with high precision sensor",
+    "price": 70,
+    "image": "https://picsum.photos/640/480?random=mouse",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "16",
+    "name": "SteelSeries Apex Pro Mechanical Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with customizable key actuation",
+    "price": 180,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "17",
+    "name": "Acer Predator X35 Gaming Monitor",
+    "description": "Ultra-wide gaming monitor with NVIDIA G-SYNC technology",
+    "price": 1700,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "18",
+    "name": "AMD Radeon RX 6900 XT Graphics Card",
+    "description": "Flagship graphics card with advanced ray tracing support",
+    "price": 1500,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "19",
+    "name": "NVIDIA GeForce RTX 3090 Graphics Card",
+    "description": "The most powerful graphics card with advanced ray tracing support",
+    "price": 2000,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "20",
+    "name": "Logitech G Pro X Superlight Wireless Gaming Mouse",
+    "description": "Ultra-lightweight wireless gaming mouse for esports professionals",
+    "price": 150,
+    "image": "https://picsum.photos/640/480?random=mouse",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "21",
+    "name": "Apple MacBook Pro 16-inch",
+    "description": "Professional-grade laptop with Retina display",
+    "price": 2400,
+    "image": "https://picsum.photos/640/480?random=macbook",
+    "category": "Laptops"
+  },
+  {
+    "id": "22",
+    "name": "Dell Alienware Area-51m Gaming Laptop",
+    "description": "High performance gaming laptop with upgradable components",
+    "price": 3000,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "23",
+    "name": "Asus ROG Swift PG279Q Gaming Monitor",
+    "description": "Gaming monitor with high refresh rate and low response time",
+    "price": 800,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "24",
+    "name": "Razer BlackWidow V3 Pro Mechanical Gaming Keyboard",
+    "description": "Wireless mechanical gaming keyboard with customizable RGB lighting",
+    "price": 230,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "25",
+    "name": "Logitech G Pro X Wireless Gaming Headset",
+    "description": "Wireless gaming headset with high quality audio",
+    "price": 200,
+    "image": "https://picsum.photos/640/480?random=headset",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "26",
+    "name": "Acer Predator Triton 500 Gaming Laptop",
+    "description": "Thin and lightweight gaming laptop with high performance",
+    "price": 1800,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "27",
+    "name": "MSI GeForce RTX 3070 Gaming X Trio Graphics Card",
+    "description": "High performance graphics card with advanced cooling",
+    "price": 1200,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "28",
+    "name": "Corsair Dark Core RGB Pro Wireless Gaming Mouse",
+    "description": "Wireless gaming mouse with customizable RGB lighting",
+    "price": 80,
+    "image": "https://picsum.photos/640/480?random=mouse",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "29",
+    "name": "Asus TUF Gaming VG32VQ1B Curved Gaming Monitor",
+    "description": "Curved gaming monitor with high refresh rate",
+    "price": 400,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "30",
+    "name": "SteelSeries Arctis 7 Wireless Gaming Headset",
+    "description": "Wireless gaming headset with long battery life",
+    "price": 150,
+    "image": "https://picsum.photos/640/480?random=headset",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "31",
+    "name": "Apple MacBook Air",
+    "description": "Lightweight and portable laptop with Retina display",
+    "price": 1000,
+    "image": "https://picsum.photos/640/480?random=macbook",
+    "category": "Laptops"
+  },
+  {
+    "id": "32",
+    "name": "Dell G5 Gaming Desktop",
+    "description": "Affordable gaming desktop with advanced cooling",
+    "price": 800,
+    "image": "https://picsum.photos/640/480?random=desktop",
+    "category": "Desktops and All-in-Ones"
+  },
+  {
+    "id": "33",
+    "name": "Asus ROG Zephyrus G14 Gaming Laptop",
+    "description": "Compact gaming laptop with high performance",
+    "price": 1400,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "34",
+    "name": "Dell Alienware AW3420DW Gaming Monitor",
+    "description": "Ultra-wide gaming monitor with NVIDIA G-SYNC technology",
+    "price": 1100,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "35",
+    "name": "Corsair Scimitar RGB Elite Gaming Mouse",
+    "description": "Gaming mouse with customizable side buttons",
+    "price": 80,
+    "image": "https://picsum.photos/640/480?random=mouse",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "36",
+    "name": "Razer Huntsman Elite Mechanical Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with opto-mechanical switches",
+    "price": 200,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "37",
+    "name": "Acer Predator Helios 300 Gaming Laptop",
+    "description": "Gaming laptop with high refresh rate display",
+    "price": 1200,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "38",
+    "name": "Gigabyte GeForce RTX 3060 Ti Gaming OC Pro Graphics Card",
+    "description": "High performance graphics card with advanced cooling",
+    "price": 800,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "39",
+    "name": "Logitech G915 TKL Wireless Gaming Keyboard",
+    "description": "Wireless gaming keyboard with low-profile mechanical switches",
+    "price": 230,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "40",
+    "name": "Asus ROG Swift PG32UQX Gaming Monitor",
+    "description": "4K gaming monitor with Mini LED backlighting",
+    "price": 3000,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "41",
+    "name": "Apple MacBook Pro 13-inch",
+    "description": "Compact and portable laptop with Retina display",
+    "price": 1300,
+    "image": "https://picsum.photos/640/480?random=macbook",
+    "category": "Laptops"
+  },
+  {
+    "id": "42",
+    "name": "HP ENVY Desktop",
+    "description": "Stylish and powerful desktop with advanced graphics",
+    "price": 900,
+    "image": "https://picsum.photos/640/480?random=desktop",
+    "category": "Desktops and All-in-Ones"
+  },
+  {
+    "id": "43",
+    "name": "Asus ROG Zephyrus S17 Gaming Laptop",
+    "description": "Slim and powerful gaming laptop with high refresh rate display",
+    "price": 2500,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "44",
+    "name": "Acer Predator XN253Q Gaming Monitor",
+    "description": "Gaming monitor with high refresh rate and low response time",
+    "price": 500,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "id": "45",
+    "name": "Corsair Dark Core RGB Pro SE Wireless Gaming Mouse",
+    "description": "Wireless gaming mouse with customizable RGB lighting",
+    "price": 90,
+    "image": "https://picsum.photos/640/480?random=mouse",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "46",
+    "name": "Razer Huntsman V2 Analog Mechanical Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with analog optical switches",
+    "price": 250,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "47",
+    "name": "Lenovo Legion 5 Gaming Laptop",
+    "description": "Affordable gaming laptop with high performance",
+    "price": 1000,
+    "image": "https://picsum.photos/640/480?random=laptop",
+    "category": "Laptops"
+  },
+  {
+    "id": "48",
+    "name": "Gigabyte GeForce RTX 3080 Ti Gaming OC Graphics Card",
+    "description": "Flagship graphics card with advanced cooling",
+    "price": 1800,
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "category": "Graphics Cards"
+  },
+  {
+    "id": "49",
+    "name": "Logitech G915 TKL Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard",
+    "description": "Compact wireless gaming keyboard with customizable RGB lighting",
+    "price": 230,
+    "image": "https://picsum.photos/640/480?random=keyboard",
+    "category": "Accessories and Peripherals"
+  },
+  {
+    "id": "50",
+    "name": "Asus ROG Swift PG43UQ Gaming Monitor",
+    "description": "Large 4K gaming monitor with high refresh rate",
+    "price": 1500,
+    "image": "https://picsum.photos/640/480?random=monitor",
+    "category": "Monitors"
+  },
+  {
+    "name": "AMD Radeon RX 7800 XT Graphics Card",
+    "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+    "price": "999",
+    "category": "Graphics Cards",
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "id": "51"
+  },
+  {
+    "name": "AMD Radeon RX 9800 XT Graphics Card",
+    "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+    "price": "3286.00",
+    "category": "Graphics Cards",
+    "image": "https://picsum.photos/640/480?random=graphics",
+    "id": "52"
+  }
+]
