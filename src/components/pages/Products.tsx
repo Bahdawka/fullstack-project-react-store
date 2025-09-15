@@ -6,7 +6,9 @@ import Product from '../products/Product'
 
 const Products = () => {
   const [page, setPage] = useState(1)
-  const { data: products, isLoading, error } = useFetch<ProductInterface>(createUrl(page))
+  const [reload, setReload] = useState('0')
+  const { data: products, isLoading, error } =
+    useFetch<ProductInterface>(createUrl(page), undefined, reload)
 
   return (
     <div>
@@ -31,7 +33,9 @@ const Products = () => {
           <ul className="products-list">
             {products.length > 0 &&
               products.map((product) => (
-                <Product key={product.id} product={product} />
+                <Product key={product.id} product={product}
+                  reload={() => setReload(product.id.toString())}
+                />
               ))}
           </ul>
         </div>

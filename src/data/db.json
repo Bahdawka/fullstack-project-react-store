@@ -8,7 +8,7 @@
     "category": "Laptops"
   },
   {
-    "id": "4",
+    "id": "2",
     "name": "Asus ROG Strix G15 Gaming Laptop",
     "description": "Gaming laptop with high refresh rate display",
     "price": 1500,
@@ -16,7 +16,7 @@
     "category": "Laptops"
   },
   {
-    "id": "7",
+    "id": "3",
     "name": "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard",
     "description": "Mechanical gaming keyboard with per-key RGB backlighting",
     "price": 200,
@@ -24,7 +24,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "8",
+    "id": "4",
     "name": "Acer Predator X27 Gaming Monitor",
     "description": "4K UHD gaming monitor with NVIDIA G-SYNC technology",
     "price": 800,
@@ -32,7 +32,7 @@
     "category": "Monitors"
   },
   {
-    "id": "9",
+    "id": "5",
     "name": "AMD Radeon RX 6800 XT Graphics Card",
     "description": "High performance graphics card with ray tracing support",
     "price": 1100,
@@ -40,7 +40,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "10",
+    "id": "6",
     "name": "NVIDIA GeForce RTX 3080 Graphics Card",
     "description": "Flagship graphics card with advanced ray tracing support",
     "price": 1200,
@@ -48,7 +48,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "11",
+    "id": "7",
     "name": "Lenovo ThinkPad X1 Carbon Laptop",
     "description": "Lightweight and durable business laptop with long battery life",
     "price": 1400,
@@ -56,7 +56,7 @@
     "category": "Laptops"
   },
   {
-    "id": "12",
+    "id": "8",
     "name": "Dell Alienware Aurora R10 Gaming Desktop",
     "description": "High performance gaming desktop with advanced cooling",
     "price": 2000,
@@ -64,7 +64,7 @@
     "category": "Desktops and All-in-Ones"
   },
   {
-    "id": "13",
+    "id": "9",
     "name": "HP Omen 15 Gaming Laptop",
     "description": "Gaming laptop with high refresh rate display",
     "price": 1600,
@@ -72,7 +72,7 @@
     "category": "Laptops"
   },
   {
-    "id": "14",
+    "id": "10",
     "name": "Asus TUF Gaming VG27AQ Monitor",
     "description": "Gaming monitor with high refresh rate and low response time",
     "price": 350,
@@ -80,7 +80,7 @@
     "category": "Monitors"
   },
   {
-    "id": "15",
+    "id": "11",
     "name": "Razer DeathAdder V2 Gaming Mouse",
     "description": "Ergonomic gaming mouse with high precision sensor",
     "price": 70,
@@ -88,7 +88,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "16",
+    "id": "12",
     "name": "SteelSeries Apex Pro Mechanical Gaming Keyboard",
     "description": "Mechanical gaming keyboard with customizable key actuation",
     "price": 180,
@@ -96,7 +96,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "17",
+    "id": "13",
     "name": "Acer Predator X35 Gaming Monitor",
     "description": "Ultra-wide gaming monitor with NVIDIA G-SYNC technology",
     "price": 1700,
@@ -104,7 +104,7 @@
     "category": "Monitors"
   },
   {
-    "id": "18",
+    "id": "14",
     "name": "AMD Radeon RX 6900 XT Graphics Card",
     "description": "Flagship graphics card with advanced ray tracing support",
     "price": 1500,
@@ -112,7 +112,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "19",
+    "id": "15",
     "name": "NVIDIA GeForce RTX 3090 Graphics Card",
     "description": "The most powerful graphics card with advanced ray tracing support",
     "price": 2000,
@@ -120,7 +120,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "20",
+    "id": "16",
     "name": "Logitech G Pro X Superlight Wireless Gaming Mouse",
     "description": "Ultra-lightweight wireless gaming mouse for esports professionals",
     "price": 150,
@@ -128,7 +128,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "21",
+    "id": "17",
     "name": "Apple MacBook Pro 16-inch",
     "description": "Professional-grade laptop with Retina display",
     "price": 2400,
@@ -136,7 +136,7 @@
     "category": "Laptops"
   },
   {
-    "id": "22",
+    "id": "18",
     "name": "Dell Alienware Area-51m Gaming Laptop",
     "description": "High performance gaming laptop with upgradable components",
     "price": 3000,
@@ -144,7 +144,7 @@
     "category": "Laptops"
   },
   {
-    "id": "23",
+    "id": "19",
     "name": "Asus ROG Swift PG279Q Gaming Monitor",
     "description": "Gaming monitor with high refresh rate and low response time",
     "price": 800,
@@ -152,7 +152,7 @@
     "category": "Monitors"
   },
   {
-    "id": "24",
+    "id": "20",
     "name": "Razer BlackWidow V3 Pro Mechanical Gaming Keyboard",
     "description": "Wireless mechanical gaming keyboard with customizable RGB lighting",
     "price": 230,
@@ -160,7 +160,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "25",
+    "id": "21",
     "name": "Logitech G Pro X Wireless Gaming Headset",
     "description": "Wireless gaming headset with high quality audio",
     "price": 200,
@@ -168,7 +168,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "26",
+    "id": "22",
     "name": "Acer Predator Triton 500 Gaming Laptop",
     "description": "Thin and lightweight gaming laptop with high performance",
     "price": 1800,
@@ -176,7 +176,7 @@
     "category": "Laptops"
   },
   {
-    "id": "27",
+    "id": "23",
     "name": "MSI GeForce RTX 3070 Gaming X Trio Graphics Card",
     "description": "High performance graphics card with advanced cooling",
     "price": 1200,
@@ -184,7 +184,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "28",
+    "id": "24",
     "name": "Corsair Dark Core RGB Pro Wireless Gaming Mouse",
     "description": "Wireless gaming mouse with customizable RGB lighting",
     "price": 80,
@@ -192,7 +192,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "29",
+    "id": "25",
     "name": "Asus TUF Gaming VG32VQ1B Curved Gaming Monitor",
     "description": "Curved gaming monitor with high refresh rate",
     "price": 400,
@@ -200,7 +200,7 @@
     "category": "Monitors"
   },
   {
-    "id": "30",
+    "id": "26",
     "name": "SteelSeries Arctis 7 Wireless Gaming Headset",
     "description": "Wireless gaming headset with long battery life",
     "price": 150,
@@ -208,7 +208,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "31",
+    "id": "27",
     "name": "Apple MacBook Air",
     "description": "Lightweight and portable laptop with Retina display",
     "price": 1000,
@@ -216,7 +216,7 @@
     "category": "Laptops"
   },
   {
-    "id": "32",
+    "id": "28",
     "name": "Dell G5 Gaming Desktop",
     "description": "Affordable gaming desktop with advanced cooling",
     "price": 800,
@@ -224,7 +224,7 @@
     "category": "Desktops and All-in-Ones"
   },
   {
-    "id": "33",
+    "id": "29",
     "name": "Asus ROG Zephyrus G14 Gaming Laptop",
     "description": "Compact gaming laptop with high performance",
     "price": 1400,
@@ -232,7 +232,7 @@
     "category": "Laptops"
   },
   {
-    "id": "34",
+    "id": "30",
     "name": "Dell Alienware AW3420DW Gaming Monitor",
     "description": "Ultra-wide gaming monitor with NVIDIA G-SYNC technology",
     "price": 1100,
@@ -240,7 +240,7 @@
     "category": "Monitors"
   },
   {
-    "id": "35",
+    "id": "31",
     "name": "Corsair Scimitar RGB Elite Gaming Mouse",
     "description": "Gaming mouse with customizable side buttons",
     "price": 80,
@@ -248,7 +248,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "36",
+    "id": "32",
     "name": "Razer Huntsman Elite Mechanical Gaming Keyboard",
     "description": "Mechanical gaming keyboard with opto-mechanical switches",
     "price": 200,
@@ -256,7 +256,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "37",
+    "id": "33",
     "name": "Acer Predator Helios 300 Gaming Laptop",
     "description": "Gaming laptop with high refresh rate display",
     "price": 1200,
@@ -264,7 +264,7 @@
     "category": "Laptops"
   },
   {
-    "id": "38",
+    "id": "34",
     "name": "Gigabyte GeForce RTX 3060 Ti Gaming OC Pro Graphics Card",
     "description": "High performance graphics card with advanced cooling",
     "price": 800,
@@ -272,7 +272,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "39",
+    "id": "35",
     "name": "Logitech G915 TKL Wireless Gaming Keyboard",
     "description": "Wireless gaming keyboard with low-profile mechanical switches",
     "price": 230,
@@ -280,7 +280,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "40",
+    "id": "36",
     "name": "Asus ROG Swift PG32UQX Gaming Monitor",
     "description": "4K gaming monitor with Mini LED backlighting",
     "price": 3000,
@@ -288,7 +288,7 @@
     "category": "Monitors"
   },
   {
-    "id": "41",
+    "id": "37",
     "name": "Apple MacBook Pro 13-inch",
     "description": "Compact and portable laptop with Retina display",
     "price": 1300,
@@ -296,7 +296,7 @@
     "category": "Laptops"
   },
   {
-    "id": "42",
+    "id": "38",
     "name": "HP ENVY Desktop",
     "description": "Stylish and powerful desktop with advanced graphics",
     "price": 900,
@@ -304,7 +304,7 @@
     "category": "Desktops and All-in-Ones"
   },
   {
-    "id": "43",
+    "id": "39",
     "name": "Asus ROG Zephyrus S17 Gaming Laptop",
     "description": "Slim and powerful gaming laptop with high refresh rate display",
     "price": 2500,
@@ -312,7 +312,7 @@
     "category": "Laptops"
   },
   {
-    "id": "44",
+    "id": "40",
     "name": "Acer Predator XN253Q Gaming Monitor",
     "description": "Gaming monitor with high refresh rate and low response time",
     "price": 500,
@@ -320,7 +320,7 @@
     "category": "Monitors"
   },
   {
-    "id": "45",
+    "id": "41",
     "name": "Corsair Dark Core RGB Pro SE Wireless Gaming Mouse",
     "description": "Wireless gaming mouse with customizable RGB lighting",
     "price": 90,
@@ -328,7 +328,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "46",
+    "id": "42",
     "name": "Razer Huntsman V2 Analog Mechanical Gaming Keyboard",
     "description": "Mechanical gaming keyboard with analog optical switches",
     "price": 250,
@@ -336,7 +336,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "47",
+    "id": "43",
     "name": "Lenovo Legion 5 Gaming Laptop",
     "description": "Affordable gaming laptop with high performance",
     "price": 1000,
@@ -344,7 +344,7 @@
     "category": "Laptops"
   },
   {
-    "id": "48",
+    "id": "44",
     "name": "Gigabyte GeForce RTX 3080 Ti Gaming OC Graphics Card",
     "description": "Flagship graphics card with advanced cooling",
     "price": 1800,
@@ -352,7 +352,7 @@
     "category": "Graphics Cards"
   },
   {
-    "id": "49",
+    "id": "45",
     "name": "Logitech G915 TKL Tenkeyless Lightspeed Wireless RGB Mechanical Gaming Keyboard",
     "description": "Compact wireless gaming keyboard with customizable RGB lighting",
     "price": 230,
@@ -360,7 +360,7 @@
     "category": "Accessories and Peripherals"
   },
   {
-    "id": "50",
+    "id": "46",
     "name": "Asus ROG Swift PG43UQ Gaming Monitor",
     "description": "Large 4K gaming monitor with high refresh rate",
     "price": 1500,
@@ -368,19 +368,19 @@
     "category": "Monitors"
   },
   {
+    "id": "47",
     "name": "AMD Radeon RX 7800 XT Graphics Card",
-    "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
-    "price": "999",
-    "category": "Graphics Cards",
+    "description": "AMD Radeon RX 7800 XT Graphics Card",
+    "price": 999,
     "image": "https://picsum.photos/640/480?random=graphics",
-    "id": "51"
+    "category": "Graphics Cards"
   },
   {
+    "id": "48",
     "name": "AMD Radeon RX 9800 XT Graphics Card",
-    "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
-    "price": "3286.00",
-    "category": "Graphics Cards",
+    "description": "AMD Radeon RX 9800 XT Graphics Card",
+    "price": 3286,
     "image": "https://picsum.photos/640/480?random=graphics",
-    "id": "52"
+    "category": "Graphics Cards"
   }
 ]

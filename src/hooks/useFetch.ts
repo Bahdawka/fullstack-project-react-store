@@ -7,13 +7,13 @@ export interface UseFetchResult<T> {
   error: string | null
 }
 
-const useFetch = <T>(url: string, limit?: number): UseFetchResult<T> => {
+const useFetch = <T>(url: string, limit?: number, reload?: string): UseFetchResult<T> => {
   const [data, setData] = useState<T[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-     const cancelTokenSource = axios.CancelToken.source()
+    const cancelTokenSource = axios.CancelToken.source()
 
     const fetchData = async () => {
       setIsLoading(true)
@@ -50,7 +50,7 @@ const useFetch = <T>(url: string, limit?: number): UseFetchResult<T> => {
     return () => {
       cancelTokenSource.cancel('Operation cancelled due to new request.')
     }
-  }, [url, limit])
+  }, [url, limit, reload])
 
   return { data, isLoading, error }
 }

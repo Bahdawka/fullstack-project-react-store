@@ -7,6 +7,8 @@
 :root {
   --primary-crimson: #dc143c;
   --secondary-peach: #ffcba4;
+  --secondary-blue: #0074f8;
+  --dark-blue: #0000ff;
   --light-peach: #ffebd6;
   --dark-crimson: #b91c3c;
   --neutral-white: #ffffff;
@@ -106,7 +108,7 @@ h1 {
 .product-item {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   gap: 1rem;
   align-items: start;
   background: linear-gradient(135deg, var(--neutral-white), var(--light-peach));
@@ -177,6 +179,52 @@ h1 {
 
 .product-item:hover .product-item__image {
   transform: scale(1.05);
+}
+
+/* Product Actions */
+.product-item__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.product-item__delete,
+.product-item__edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.product-item__delete {
+  background: #dc3545;
+  color: white;
+}
+
+.product-item__delete:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+.product-item__edit {
+  background: var(--secondary-blue);
+  color: white;
+}
+
+.product-item__edit:hover {
+  background: var(--dark-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow);
 }
 
 /* Products List Grid */
