@@ -46,7 +46,7 @@ export const routesConfig: RouteConfig[] = [
     id: 'todos',
     path: '/todos',
     element: <Todos />,
-    label: 'TODO',
+    label: 'Todo',
     showInNavigation: true
   },
 ]

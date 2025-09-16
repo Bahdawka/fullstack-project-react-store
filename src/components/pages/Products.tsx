@@ -3,6 +3,7 @@ import useFetch from '../../hooks/useFetch'
 import { API_ITEMS_PER_PAGE_LIMIT, createUrl } from '../utils/mockapi'
 import { type ProductInterface } from '../../type/Product.interface'
 import Product from '../products/Product'
+import AddProductButton from '../products/AddProductButton'
 
 const Products = () => {
   const [page, setPage] = useState(1)
@@ -17,18 +18,21 @@ const Products = () => {
       {error && <h2 className="error">{error}</h2>}
       {!isLoading && !error && (
         <div className="content">
-          <div className="pagination">
-            <button
-              className="pagination__btn"
-              disabled={page === 1} onClick={() => setPage(prev => prev - 1)}
-            >Prev
-            </button>
-            <button
-              className="pagination__btn"
-              disabled={products.length < API_ITEMS_PER_PAGE_LIMIT}
-              onClick={() => setPage(prev => prev + 1)}
-            >Next
-            </button>
+          <div className="buttons-group">
+            <AddProductButton />
+            <div className="pagination">
+              <button
+                className="pagination__btn"
+                disabled={page === 1} onClick={() => setPage(prev => prev - 1)}
+              >Prev
+              </button>
+              <button
+                className="pagination__btn"
+                disabled={products.length < API_ITEMS_PER_PAGE_LIMIT}
+                onClick={() => setPage(prev => prev + 1)}
+              >Next
+              </button>
+            </div>
           </div>
           <ul className="products-list">
             {products.length > 0 &&
