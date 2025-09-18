@@ -1,24 +1,21 @@
 import { useState, type FormEvent } from 'react'
 import type { ProductInterface } from '../../type/Product.interface'
-import { PRODUCT_CATEGORIES } from '../../data/mockData'
-
+import { INITIAL_PRODUCT, PRODUCT_CATEGORIES } from '../../data/mockData'
 
 interface ProductFormProps {
-  onSubmit: (product: ProductInterface) => void
+  onSubmit: (product: Partial<ProductInterface>) => void
 }
 
 const ProductForm = ({ onSubmit }: ProductFormProps) => {
-  const [id, setId] = useState(0)
-  const [name, setName] = useState('')
-  const [description, setDescription] = useState('')
-  const [price, setPrice] = useState('')
-  const [category, setCategory] = useState('')
-  const [image, setImage] = useState('https://picsum.photos/640/480?random=graphics')
+  const [name, setName] = useState(INITIAL_PRODUCT.name)
+  const [description, setDescription] = useState(INITIAL_PRODUCT.description)
+  const [price, setPrice] = useState(INITIAL_PRODUCT.price)
+  const [category, setCategory] = useState(INITIAL_PRODUCT.category)
+  const [image, setImage] = useState(INITIAL_PRODUCT.image)
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    onSubmit({ id, name, description, price, category, image })
-    setId(0)
+    onSubmit({ name, description, price, category, image })
     setName('')
     setDescription('')
     setPrice('')
