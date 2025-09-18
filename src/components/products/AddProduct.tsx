@@ -4,14 +4,14 @@ import ProductForm from '../form/ProductForm'
 import type { ProductInterface } from '../../type/Product.interface'
 import { useAdd } from '../../hooks/useAdd'
 import { API_URL } from '../utils/mockapi'
+import { INITIAL_PRODUCT } from '../../data/mockData'
 
 
-const AddProductButton = () => {
+const AddProduct = () => {
   const [showModal, setShowModal] = useState(false)
   const { add } = useAdd(API_URL)
 
   const handleOpen = () => setShowModal(true)
-
   const handleClose = () => setShowModal(false)
 
   const handleSubmit = async (product: Partial<ProductInterface>) => {
@@ -30,11 +30,11 @@ const AddProductButton = () => {
       {showModal && (
         <Modal onClose={handleClose}>
           <h2 className="modal__title">Add Product</h2>
-          <ProductForm onSubmit={handleSubmit} />
+          <ProductForm onSubmit={handleSubmit} product={INITIAL_PRODUCT} />
         </Modal>
       )}
     </>
   )
 }
 
-export default AddProductButton
+export default AddProduct

@@ -2,6 +2,7 @@ import { type ProductInterface } from '../../type/Product.interface'
 import { API_URL } from '../utils/mockapi'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 import { useDelete } from '../../hooks/useDelete'
+import EditProduct from './EditProduct'
 
 interface ProductProps {
   product: ProductInterface
@@ -30,9 +31,9 @@ const Product = ({ product: { id, name, description, price, image, category }, r
         <button className="product-item__delete" onClick={handleDeleteProduct}>
           <FaTrash />
         </button>
-        <button className="product-item__edit">
+        <EditProduct product={{ id, name, description, price, image, category }} reload={reload}>
           <FaEdit />
-        </button>
+        </EditProduct>
       </div>
     </li>
   )

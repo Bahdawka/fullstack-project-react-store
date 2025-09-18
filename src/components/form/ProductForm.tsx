@@ -1,23 +1,37 @@
 import { useState, type FormEvent } from 'react'
 import type { ProductInterface } from '../../type/Product.interface'
-import { INITIAL_PRODUCT, PRODUCT_CATEGORIES } from '../../data/mockData'
+import { PRODUCT_CATEGORIES } from '../../data/mockData'
 import InputField from './InputField'
 import SelectField from './SelectField'
 
 interface ProductFormProps {
   onSubmit: (product: Partial<ProductInterface>) => void
+  product: Partial<ProductInterface>
 }
 
-const ProductForm = ({ onSubmit }: ProductFormProps) => {
-  const [name, setName] = useState(INITIAL_PRODUCT.name as string)
-  const [description, setDescription] = useState(INITIAL_PRODUCT.description as string)
-  const [price, setPrice] = useState(INITIAL_PRODUCT.price as string)
-  const [category, setCategory] = useState(INITIAL_PRODUCT.category as string)
-  const [image, setImage] = useState(INITIAL_PRODUCT.image as string)
+const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
+  const [name, setName] = useState(product.name as string)
+  const [description, setDescription] = useState(product.description as string)
+  const [price, setPrice] = useState(product.price as string)
+  const [category, setCategory] = useState(product.category as string)
+  const [image, setImage] = useState(product.image as string)
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    onSubmit({ name, description, price, category, image })
+
+    const returnProduct: Partial<ProductInterface> = {
+      name,
+      description,
+      price,
+      category,
+      image
+    }
+
+    if (product.id) {
+      returnProduct.id = product.id
+    }
+
+    onSubmit(returnProduct)
     setName('')
     setDescription('')
     setPrice('')
