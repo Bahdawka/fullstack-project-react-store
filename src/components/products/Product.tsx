@@ -1,5 +1,5 @@
 import { type ProductInterface } from '../../type/Product.interface'
-import { API_URL } from '../utils/mockapi'
+import { API_URL } from '../../utils/mockapi'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 import { useDelete } from '../../hooks/useDelete'
 import EditProduct from './EditProduct'

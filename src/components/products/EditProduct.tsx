@@ -1,17 +1,15 @@
 import { useState, type ReactNode } from 'react'
 import type { ProductInterface } from '../../type/Product.interface'
 import { useUpdate } from '../../hooks/useUpdate'
-import { API_URL } from '../utils/mockapi'
+import { API_URL } from '../../utils/mockapi'
 import Modal from '../modals/Modal'
 import ProductForm from '../form/ProductForm'
-
 
 interface EditProductProps {
   children: ReactNode
   product: ProductInterface
   reload: () => void
 }
-
 
 const EditProduct = ({ children, product, reload }: EditProductProps) => {
   const [showModal, setShowModal] = useState(false)

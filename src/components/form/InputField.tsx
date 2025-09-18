@@ -1,6 +1,5 @@
 import type { ChangeEvent } from 'react'
 
-
 interface InputFieldProps {
   id: string
   type?: string
@@ -24,7 +23,6 @@ const InputField = ({
   onChangeInput,
   onChangeTextArea
 }: InputFieldProps) => {
-
 
   return (
     <div className="form-group">
@@ -52,7 +50,6 @@ const InputField = ({
         />
       )}
     </div>
-
   )
 }
 

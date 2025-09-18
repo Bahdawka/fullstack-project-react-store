@@ -12,7 +12,7 @@ interface ProductFormProps {
 const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
   const [name, setName] = useState(product.name as string)
   const [description, setDescription] = useState(product.description as string)
-  const [price, setPrice] = useState(product.price as string)
+  const [price, setPrice] = useState(product.price as number)
   const [category, setCategory] = useState(product.category as string)
   const [image, setImage] = useState(product.image as string)
 
@@ -34,7 +34,7 @@ const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
     onSubmit(returnProduct)
     setName('')
     setDescription('')
-    setPrice('')
+    setPrice(0)
     setCategory('')
     setImage('')
   }
@@ -49,6 +49,7 @@ const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
         required
         onChangeInput={(e) => setName(e.target.value)}
       />
+
       <InputField
         id="description"
         value={description}
@@ -57,14 +58,16 @@ const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
         textarea
         onChangeTextArea={(e) => setDescription(e.target.value)}
       />
+
       <InputField
         id="price"
-        value={price}
+        value={price.toString()}
         label="Price"
         placeholder="Product price..."
         required
-        onChangeInput={(e) => setPrice(e.target.value)}
+        onChangeInput={(e) => setPrice(+e.target.value)}
       />
+
       <InputField
         id="image"
         value={image}
@@ -73,6 +76,7 @@ const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
         required
         onChangeInput={(e) => setImage(e.target.value)}
       />
+      
       <SelectField
         id="category"
         value={category}

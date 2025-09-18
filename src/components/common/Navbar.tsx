@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router'
 import { navigationRoutes } from '../../router'
 
-
 const Navbar = () => {
   return (
     <nav className="navbar">

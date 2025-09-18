@@ -3,9 +3,8 @@ import Modal from '../modals/Modal'
 import ProductForm from '../form/ProductForm'
 import type { ProductInterface } from '../../type/Product.interface'
 import { useAdd } from '../../hooks/useAdd'
-import { API_URL } from '../utils/mockapi'
+import { API_URL } from '../../utils/mockapi'
 import { INITIAL_PRODUCT } from '../../data/mockData'
-
 
 const AddProduct = () => {
   const [showModal, setShowModal] = useState(false)

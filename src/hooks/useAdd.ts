@@ -1,7 +1,6 @@
 import axios from 'axios'
 import type { ProductInterface } from '../type/Product.interface'
 
-
 export const useAdd = (url: string) => {
   const add = async (data: Partial<ProductInterface>) => {
     try {
