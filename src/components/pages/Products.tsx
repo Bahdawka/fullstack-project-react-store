@@ -1,12 +1,13 @@
 import { useRef, useState } from 'react'
 import useFetch from '../../hooks/useFetch'
 import { API_ITEMS_PER_PAGE_LIMIT, createUrl } from '../../utils/mockapi'
-import { type ProductInterface } from '../../type/Product.interface'
+import { type ProductInterface } from '../../types/Product.interface'
 import Product from '../products/Product'
 import AddProduct from '../products/AddProduct'
 import { debounce } from '../../utils/debounce'
 import { Order_LIST, SORT_BY_LIST } from '../../data/mockData'
 import { MdRefresh } from 'react-icons/md'
+import SelectField from '../form/SelectField'
 
 const Products = () => {
   const [page, setPage] = useState(1)
@@ -33,12 +34,13 @@ const Products = () => {
 
   return (
     <div>
-      <h1>Products</h1>
+      <h1>Products List</h1>
 
       <div className="products-filter">
         <div className="form-group">
-          <label htmlFor="filter">Filter by name</label>
+          <label className="form-label" htmlFor="filter">Filter by name</label>
           <input
+            className="form-control"
             ref={inputRef}
             id="filter"
             type="text"
@@ -46,26 +48,20 @@ const Products = () => {
             onChange={(e) => debounceSetName(e.target.value)}
           />
         </div>
-        <div className="form-group">
-          <label htmlFor="sort">Sort by</label>
-          <select id="sort" value={sort} onChange={(e) => setSort(e.target.value)}>
-            {SORT_BY_LIST.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.text}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="form-group">
-          <label htmlFor="order">Order</label>
-          <select id="order" value={order} onChange={(e) => setOrder(e.target.value)}>
-            {Order_LIST.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.text}
-              </option>
-            ))}
-          </select>
-        </div>
+        <SelectField
+          id="sort"
+          value={sort}
+          label="Sort by"
+          options={SORT_BY_LIST}
+          onChangeSelect={(e) => setSort(e.target.value)}
+        />
+        <SelectField
+          id="order"
+          value={order}
+          label="Order"
+          options={Order_LIST}
+          onChangeSelect={(e) => setOrder(e.target.value)}
+        />
 
         <button onClick={resetFilters}>
           <MdRefresh />

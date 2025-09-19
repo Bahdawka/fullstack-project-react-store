@@ -1,5 +1,5 @@
 import type { ChangeEvent } from 'react'
-import type { SelectOptionInterface } from '../../type/common'
+import type { SelectOptionInterface } from '../../types/Common'
 
 interface SelectFieldProps {
   id: string

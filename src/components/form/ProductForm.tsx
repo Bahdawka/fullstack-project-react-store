@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import type { ProductInterface } from '../../type/Product.interface'
+import type { ProductInterface } from '../../types/Product.interface'
 import { PRODUCT_CATEGORIES } from '../../data/mockData'
 import InputField from './InputField'
 import SelectField from './SelectField'
@@ -82,7 +82,7 @@ const ProductForm = ({ onSubmit, product }: ProductFormProps) => {
         value={category}
         label="Category"
         required
-        options={PRODUCT_CATEGORIES.map((category) => ({ value: category, text: category }))}
+        options={PRODUCT_CATEGORIES}
         onChangeSelect={(e) => setCategory(e.target.value)}
       />
 

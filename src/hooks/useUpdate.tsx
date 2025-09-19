@@ -1,5 +1,5 @@
 import axios from 'axios'
-import type { ProductInterface } from '../type/Product.interface'
+import type { ProductInterface } from '../types/Product.interface'
 
 export const useUpdate = (url: string) => {
   const update = async (data: Partial<ProductInterface>) => {
