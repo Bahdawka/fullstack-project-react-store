@@ -1,13 +1,17 @@
-import { useRef, useState } from 'react'
-import useFetch from '../../hooks/useFetch'
+import { useEffect, useRef, useState } from 'react'
 import { API_ITEMS_PER_PAGE_LIMIT, createUrl } from '../../utils/mockapi'
-import { type ProductInterface } from '../../types/Product.interface'
 import Product from '../products/Product'
 import AddProduct from '../products/AddProduct'
 import { debounce } from '../../utils/debounce'
 import { Order_LIST, SORT_BY_LIST } from '../../data/mockData'
 import { MdRefresh } from 'react-icons/md'
 import SelectField from '../form/SelectField'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchAllProducts, selectProducts, selectProductsError, selectProductsLoading, selectProductsTotalCount } from '../../redux/slices/productsSlice'
+import type { AppDispatch } from '../../redux/store'
+import { selectIsLoggedIn } from '../../redux/slices/authSlice'
+import Loading from '../../ui/Loading'
+import Pagination from '../products/Pagination'
 
 const Products = () => {
   const [page, setPage] = useState(1)
@@ -18,8 +22,20 @@ const Products = () => {
 
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const { data: products, isLoading, error } =
-    useFetch<ProductInterface>(createUrl(page, name, sort, order), undefined, reload)
+  const dispatch = useDispatch<AppDispatch>()
+
+  const products = useSelector(selectProducts)
+  const totalProducts = useSelector(selectProductsTotalCount)
+  const isLoading = useSelector(selectProductsLoading)
+  const error = useSelector(selectProductsError)
+  const isLoggedIn = useSelector(selectIsLoggedIn)
+
+  const totalPages = Math.ceil(totalProducts / API_ITEMS_PER_PAGE_LIMIT)
+
+  useEffect(() => {
+    dispatch(fetchAllProducts(createUrl(page, name, sort, order)))
+  }, [dispatch, page, name, sort, order, reload])
+
   const debounceSetName = debounce(setName, 1000)
 
   const resetFilters = () => {
@@ -68,25 +84,17 @@ const Products = () => {
         </button>
       </div>
 
-      {isLoading && <h2 className="loading">Loading...</h2>}
+      {isLoading && <Loading />}
       {error && <h2 className="error">{error}</h2>}
       {!isLoading && !error && (
         <div className="content">
+          <Pagination
+            currentPage={page}
+            totalPages={totalPages}
+            onPageChange={setPage}
+          />
           <div className="buttons-group">
-            <AddProduct />
-            <div className="pagination">
-              <button
-                className="pagination__btn"
-                disabled={page === 1} onClick={() => setPage(prev => prev - 1)}
-              >Prev
-              </button>
-              <button
-                className="pagination__btn"
-                disabled={products.length < API_ITEMS_PER_PAGE_LIMIT}
-                onClick={() => setPage(prev => prev + 1)}
-              >Next
-              </button>
-            </div>
+            {isLoggedIn && <AddProduct />}
           </div>
           {products.length > 0 ? (
             <ul className="products-list">

@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
         ) : (
           <li>
-            <button className="navbar__link" onClick={handleLogin}>Login</button>
+            <button className="navbar__link" onClick={handleLogin}>LogIn</button>
           </li>
         )}
       </ul>
