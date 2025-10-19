@@ -14,20 +14,50 @@ const Users = () => {
   }, [dispatch])
 
   return (
-    <div>
-      <h1>Users</h1>
-      {isLoading && <h2 className="loading">Loading...</h2>}
-      {error && <h2 className="error">{error}</h2>}
+    <div className="page-container">
+      <div className="page-header">
+        <h1 className="page-title">👥 Users</h1>
+        <p className="page-subtitle">
+          View profiles of all system users. Total users: {users.length}
+        </p>
+      </div>
+
+      {isLoading && <div className="loading">Loading users...</div>}
+      {error && <div className="error">Error: {error}</div>}
+      
       {!isLoading && !error && !!users.length && (
-        <ul>
+        <div className="cards-grid">
           {users.map((user) => (
-            <li key={user.id}>
-              <h2>{user.name}</h2>
-              <p>{user.email}</p>
-              <p>{user.phone}</p>
-            </li>
+            <div key={user.id} className="card user-card">
+              <div className="card-header">
+                <div className="card-icon user-icon">👤</div>
+                <h3 className="card-title">{user.name}</h3>
+              </div>
+              <div className="card-content">
+                <div className="user-info">
+                  <span className="user-info-icon">📧</span>
+                  <span>{user.email}</span>
+                </div>
+                <div className="user-info">
+                  <span className="user-info-icon">📞</span>
+                  <span>{user.phone}</span>
+                </div>
+                <div className="user-info">
+                  <span className="user-info-icon">🌐</span>
+                  <span>{user.website || 'Not specified'}</span>
+                </div>
+                <div className="user-info">
+                  <span className="user-info-icon">👤</span>
+                  <span>@{user.username}</span>
+                </div>
+              </div>
+              <div className="card-meta">
+                <span className="card-author">ID: {user.id}</span>
+                <span className="card-status status-completed">Active</span>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   )

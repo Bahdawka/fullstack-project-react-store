@@ -14,20 +14,42 @@ const Posts = () => {
   }, [dispatch])
 
   return (
-    <div>
-      <h1>Posts</h1>
-      {isLoading && <h2 className="loading">Loading...</h2>}
-      {error && <h2 className="error">{error}</h2>}
+    <div className="page-container">
+      <div className="page-header">
+        <h1 className="page-title">📝 Posts</h1>
+        <p className="page-subtitle">
+          View all posts and their content. Total posts: {posts.length}
+        </p>
+      </div>
+
+      {isLoading && <div className="loading">Loading posts...</div>}
+      {error && <div className="error">Error: {error}</div>}
+      
       {!isLoading && !error && !!posts.length && (
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id}>
-              <h2>{post.title}</h2>
-              <p>{post.body}</p>
-              <small>Author ID: {post.userId}</small>
-            </li>
+        <div className="cards-grid">
+          {posts.slice(0, 20).map((post) => (
+            <div key={post.id} className="card">
+              <div className="card-header">
+                <div className="card-icon post-id">#{post.id}</div>
+                <h3 className="card-title">{post.title}</h3>
+              </div>
+              <div className="card-content">
+                <p>{post.body}</p>
+              </div>
+              <div className="card-meta">
+                <span className="card-author">👤 Author: {post.userId}</span>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
+      )}
+
+      {!isLoading && !error && posts.length > 20 && (
+        <div className="pagination-info">
+          <p className="pagination-info-text">
+            Showing first 20 posts out of {posts.length}. Total available {posts.length} posts.
+          </p>
+        </div>
       )}
     </div>
   )
