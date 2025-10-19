@@ -1,6 +1,6 @@
 # React Store & Products Management
 
-## Proget was deployed on VERCEL : https://fullstack-project-react-store-three.vercel.app
+## Progect was deployed on VERCEL : https://fullstack-project-react-store-three.vercel.app
 
 Responsive web application built with React, TypeScript, and Redux for managing posts, users, products, and todos. This project demonstrates advanced React patterns, state management, and modern web development practices.
 
