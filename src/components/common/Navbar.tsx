@@ -8,8 +8,6 @@ const Navbar = () => {
   const dispatch = useDispatch()
   const isLoggedIn = useSelector((state: RootState) => state.auth.isLoggedIn)
 
-  console.log(isLoggedIn)
-
   const handleLogin = () => {
     dispatch(login())
   }

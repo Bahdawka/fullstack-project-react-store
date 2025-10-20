@@ -15,11 +15,10 @@ const AddProduct = () => {
 
   const handleSubmit = async (product: Partial<ProductInterface>) => {
     try {
-      const newProduct = await add(product)
-      console.log(newProduct)
+      await add(product)
       handleClose()
     } catch (error) {
-      console.log(error)
+      console.error('Failed to add product:', error)
     }
   }
 

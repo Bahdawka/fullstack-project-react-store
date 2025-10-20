@@ -1052,6 +1052,56 @@ select.form-control {
 }
 
 /* ==========================================================================
+   ERROR PAGE STYLES
+   ========================================================================== */
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--neutral-white), var(--light-peach));
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px var(--shadow);
+  border: 2px solid var(--secondary-peach);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  color: var(--primary-crimson);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.error-description {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.error-actions .form-button {
+  min-width: 140px;
+  width: 140px;
+  flex: 0 0 auto;
+  margin: 0;
+  text-align: center;
+}
+
+/* ==========================================================================
    RESPONSIVE DESIGN - ALL MEDIA QUERIES
    ========================================================================== */
 

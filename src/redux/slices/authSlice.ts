@@ -5,8 +5,18 @@ export interface AuthStateInterface {
   isLoggedIn: boolean
 }
 
-const initialState = {
-  isLoggedIn: true,
+const getInitialAuthState = (): boolean => {
+  try {
+    const savedState = localStorage.getItem('isLoggedIn')
+    return savedState !== null ? JSON.parse(savedState) : true
+  } catch (error) {
+    console.warn('Failed to parse auth state from localStorage:', error)
+    return true
+  }
+}
+
+const initialState: AuthStateInterface = {
+  isLoggedIn: getInitialAuthState(),
 }
 
 const authSlice = createSlice({
@@ -15,9 +25,11 @@ const authSlice = createSlice({
   reducers: {
     login: (state) => {
       state.isLoggedIn = true
+      localStorage.setItem('isLoggedIn', 'true')
     },
     logout: (state) => {
       state.isLoggedIn = false
+      localStorage.setItem('isLoggedIn', 'false')
     }
   }
 })

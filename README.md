@@ -1,6 +1,6 @@
 # React Store & Products Management
 
-## Proget was deployed on VERCEL : 
+## Proget was deployed on VERCEL : https://fullstack-project-react-store-three.vercel.app/
 
 Responsive web application built with React, TypeScript, and Redux for managing posts, users, products, and todos. This project demonstrates advanced React patterns, state management, and modern web development practices.
 
@@ -114,7 +114,7 @@ src/
 - **Responsive Grid Layout** - Adapts to all screen sizes
 
 ### 2. Posts Management
-- **Post Listing** - Display all posts with pagination
+- **Post Listing** - Display all posts with pagination (limited to 20 posts)
 - **Post Details** - Title, content, and author information
 - **Loading States** - Smooth loading experience
 
@@ -131,8 +131,8 @@ src/
 - **Modal Forms** - Clean add/edit interfaces
 
 ### 5. Todo Management
-- **Task Listing** - All todos with completion status
-- **Status Indicators** - Visual completion status
+- **Task Listing** - All todos with completion status (limited to 30 tasks)
+- **Status Indicators** - Visual completion status  
 - **User Assignment** - Track task ownership
 
 ### Installation
@@ -176,6 +176,26 @@ npm run preview
 The project uses the following APIs:
 - **JSONPlaceholder** - `https://jsonplaceholder.typicode.com/`
 - **MockAPI** - `https://68c86f805d8d9f5147355d22.mockapi.io/`
+
+### Authentication State
+- **Default Login State** - Users are logged in by default for demo purposes
+- **Persistent Sessions** - Authentication state is preserved using localStorage
+- **Protected Features** - Product creation, editing, and deletion require authentication
+
+### Display Limitations
+- **Posts Page** - Shows first 20 posts out of total available
+- **Todos Page** - Displays first 30 todos out of total available  
+- **Users Page** - Shows all users without pagination
+
+## Error Handling
+
+### 404 Page
+The application includes a custom 404 Not Found page for invalid routes with options to:
+- Navigate back to home page
+- Go back to previous page
+
+### Loading States
+All data fetching operations include proper loading indicators and error handling for improved user experience.
 
 ## License
 

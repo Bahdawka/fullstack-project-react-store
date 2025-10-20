@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { API_ITEMS_PER_PAGE_LIMIT, createUrl } from '../../utils/mockapi'
 import Product from '../products/Product'
 import AddProduct from '../products/AddProduct'
@@ -18,7 +18,6 @@ const Products = () => {
   const [name, setName] = useState('')
   const [sort, setSort] = useState('')
   const [order, setOrder] = useState('asc')
-  const [reload, setReload] = useState('0')
 
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -32,9 +31,13 @@ const Products = () => {
 
   const totalPages = Math.ceil(totalProducts / API_ITEMS_PER_PAGE_LIMIT)
 
-  useEffect(() => {
+  const refreshProducts = useCallback(() => {
     dispatch(fetchAllProducts(createUrl(page, name, sort, order)))
-  }, [dispatch, page, name, sort, order, reload])
+  }, [dispatch, page, name, sort, order])
+
+  useEffect(() => {
+    refreshProducts()
+  }, [refreshProducts])
 
   const debounceSetName = debounce(setName, 1000)
 
@@ -100,7 +103,7 @@ const Products = () => {
             <ul className="products-list">
               {products.map((product) => (
                 <Product key={product.id} product={product}
-                  reload={() => setReload(product.id.toString())}
+                  reload={refreshProducts}
                 />
               ))}
             </ul>

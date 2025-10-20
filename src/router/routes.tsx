@@ -4,6 +4,7 @@ import Posts from '../components/pages/Posts'
 import Users from '../components/pages/Users'
 import Todos from '../components/pages/Todos'
 import Products from '../components/pages/Products'
+import NotFound from '../components/pages/NotFound'
 
 export interface RouteConfig {
   id: string
@@ -49,6 +50,12 @@ export const routesConfig: RouteConfig[] = [
     label: 'Todo',
     showInNavigation: true
   },
+  {
+    id: 'not-found',
+    path: '*',
+    element: <NotFound />,
+    showInNavigation: false
+  }
 ]
 
 export const navigationRoutes = routesConfig.filter(route => route.showInNavigation)
